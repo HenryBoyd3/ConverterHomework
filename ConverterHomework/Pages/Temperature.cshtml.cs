@@ -27,20 +27,24 @@ namespace ConverterHomework
 
         }
 
-        private float coversion(int conversion, float value)
+        private string coversion(int conversion, float value)
         {
+            string valueWithTempType = string.Empty;
             switch (conversion)
             {
                 case 0:
                     value = value - 32;
                     value = value * 5/9;
+                    valueWithTempType = value + "C";
                     break;
                 case 1:
                     value = value * 9/5 + 32;
+                    valueWithTempType = value + "F";
                     break;
 
             }
-            return value;
+            
+            return valueWithTempType;
         }
     }
 }
