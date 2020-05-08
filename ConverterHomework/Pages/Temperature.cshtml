@@ -1,0 +1,23 @@
+﻿@page
+@model ConverterHomework.TemperatureModel
+@{
+    ViewData["Title"] = "Temperature";
+}
+
+@*need to make this look nicer but it does function as inteded I need to add
+    regex to only allow digits and require input
+*@
+<h1>Temperature</h1>
+
+    <form method="post">
+        <select name="tempType">
+            <option value="0">Fahrenheit to Celsius</option>
+            <option value="1">Celsius to Fahrenheit</option>
+        </select>
+        
+        <input  name="value">
+        <input type="submit" />
+        
+    </form>
+    <p>@Model.conversion </p>
+

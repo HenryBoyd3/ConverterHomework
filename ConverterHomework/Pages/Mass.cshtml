@@ -1,0 +1,23 @@
+﻿@page
+@model ConverterHomework.MassModel
+@{
+    ViewData["Title"] = "Mass";
+}
+
+<h1>Mass</h1>
+
+<form method="post">
+    <select name="massType">
+        <option value="0">Pounds to Ounces</option>
+        <option value="1">Ounces to Pounds</option>
+        <option value="2">Grams to Pounds</option>
+        <option value="3">Milligrams to Pounds</option>
+    </select>
+    <br />
+    <input name="value">
+    <input type="submit" />
+</form>
+
+
+<p>@Model.conversion </p>
+
