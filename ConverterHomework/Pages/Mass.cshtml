@@ -7,6 +7,7 @@
 <h1>Mass</h1>
 
 <form method="post">
+    what would you like converted?
     <select name="massType">
         <option value="0">Pounds to Ounces</option>
         <option value="1">Ounces to Pounds</option>
@@ -14,10 +15,11 @@
         <option value="3">Milligrams to Pounds</option>
     </select>
     <br />
-    <input name="value">
-    <input type="submit" />
+    what value would you like converted <input input type="number" step="any"  name="value" required value="">
+    <br />
+    <input type="submit" value="Convert" />
 </form>
 
 
-<p>@Model.conversion </p>
+<p>the conversion is @Model.conversion </p>
 

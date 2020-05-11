@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Text.RegularExpressions;
 
 namespace ConverterHomework
 {
@@ -11,6 +12,8 @@ namespace ConverterHomework
     {
         [BindProperty]
         public int tempType { get; set; }
+
+
         [BindProperty]
         public float value { get; set; }
         [BindProperty]
@@ -22,8 +25,9 @@ namespace ConverterHomework
         }
         public void OnPost()
         {
-            //basic function need to add more 
-            conversion = coversion(tempType, value).ToString();
+
+                conversion = coversion(tempType, value).ToString();
+
 
         }
 

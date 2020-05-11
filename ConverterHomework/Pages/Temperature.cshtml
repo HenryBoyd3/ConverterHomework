@@ -6,6 +6,7 @@
 
 @*need to make this look nicer but it does function as inteded I need to add
     regex to only allow digits and require input
+    ^\-?\d+\.?\d* regular expresion I need for extra credit
 *@
 <h1>Temperature</h1>
 
@@ -16,8 +17,10 @@
         </select>
         <br />
         
-        Enter the Temperature you want to convert <input  name="value">
-        <input type="submit" title="enter" />
+        Enter the Temperature you want to convert <input type="number" step="any" name="value" required value="">
+        <br />
+        <input type="submit"   value="Convert" />
+
         <br />
     </form>
     <p>the converted Temperature is @Model.conversion  </p>
